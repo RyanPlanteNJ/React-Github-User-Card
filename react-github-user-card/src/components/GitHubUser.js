@@ -1,25 +1,29 @@
 import React from 'react';
-import ProtoTypes from 'prop-types';
 
-function GitHubUser(props) {
-    return(
-        <>
-            {props.user.map(user => (
-                <div className="cards"
-                    key={user.id}
-                >
-                    <div className="card">
-                        <img src={user.avatar_url} alt={user.name}/>
-                        <div className="card-info">
-                            <h3 className="name">{user.name}</h3>
-                            <p className="username">{user.login}</p>
-                            <p>{user.location}</p>
-                            <p>Profile: <a href={user.html_url}>{user.html_url}</a></p>
-                            <p>Followers: {user.followers}</p>
-                            <p>Following: {user.following}</p>
-                        </div>
+export default function GitHubUser(props) {
+    const { user } = props;
+    return (
+        <div className="gitHubUser">
+            <div>
+                <div>
+                    <div className="profileContainer">
+                        <img src={user.avatar_url} alt="Github User Face" />
+                    </div>
+                    <a className="gitHubLogin" href={user.html_url} target="_blank" rel="noopener noreferrer">
+                        <p>{user.login}</p>
+                    </a>
+                </div>
+                <div>
+                    <div>
+                        <h3>
+                            {user.name} : {user.location}
+                        </h3>
+                    </div>
+                    <div>
+                        <p>Bio: {user.bio}</p>
                     </div>
                 </div>
-            ))}
-    )
+            </div>
+        </div>
+    );
 }
