@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v20/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkM0o18E.ttf) format('truetype');
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+h3 {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fafbfc;
+}
+.gitHubCardUserContainer {
+  margin: 0 auto;
+}
+.gitHubUser {
+  display: flex;
+  justify-content: space-around;
+  margin: 49px auto;
+  padding: 20px;
+  background-color: rgba(45, 186, 78, 0.671);
+  border: 3px solid #24292e;
+  max-width: 712px;
+  border-radius: 2rem;
+}
+.gitHubUser .gitHubLogin {
+  font-size: 20px;
+}
+.profileContainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.profileContainer img {
+  width: inherit;
+}
+.followers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 49px auto;
+  padding: 20px;
+  background-color: #FFB280;
+  border: 3px solid #4d4f50;
+  max-width: 712px;
+  border-radius: 2rem;
+}
+.followerProfile {
+  width: 300px;
+  height: 300px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.followerURL h4 {
+  font-size: 20px;
+}
+.followerURL a {
+  text-decoration: none;
+}
